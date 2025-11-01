@@ -39,7 +39,7 @@ export function Hero() {
       </motion.div>
 
       {/* Floating Particles */}
-      <div className="absolute inset-0 z-10 overflow-hidden">
+      {/* <div className="absolute inset-0 z-10 overflow-hidden">
         {[...Array(20)].map((_, i) => (
           <motion.div
             key={i}
@@ -59,7 +59,7 @@ export function Hero() {
             }}
           />
         ))}
-      </div>
+      </div> */}
 
       <div className="relative z-20 text-center px-4 max-w-5xl">
         {/* Animated Icon */}
