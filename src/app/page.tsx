@@ -1,5 +1,7 @@
 "use client";
 
+import { About } from "@/components/about";
+import { Contact } from "@/components/contact";
 import { Footer } from "@/components/footer";
 import { Gallery } from "@/components/gallery";
 import { Header } from "@/components/header";
@@ -11,6 +13,8 @@ export default function Home() {
       <Header />
       <Hero />
       <Gallery />
+      <About />
+      <Contact />
       <Footer />
     </div>
   );
