@@ -1,0 +1,17 @@
+{
+  "watch": [
+    "pages/**/*",
+    "components/**/*",
+    "lib/**/*",
+    "styles/**/*",
+    "public/**/*"
+  ],
+  "ext": "js,jsx,ts,tsx,json,css,scss,md",
+  "ignore": [
+    ".next/**/*",
+    "node_modules/**/*",
+    ".git/**/*"
+  ],
+  "exec": "next dev -p 3000",
+  "delay": 1000
+}
