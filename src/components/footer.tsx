@@ -2,6 +2,7 @@
 
 import { motion } from "motion/react";
 import { Facebook, Instagram, Twitter, Heart } from "lucide-react";
+import Image from "next/image";
 
 export function Footer() {
   const socialLinks = [
@@ -34,18 +35,21 @@ export function Footer() {
           >
             <div className="flex items-center gap-3 mb-6">
               <motion.div
-                className="w-14 h-14 rounded-full flex items-center justify-center relative overflow-hidden"
-                style={{ backgroundColor: "#edc61c" }}
-                whileHover={{ rotate: 360 }}
-                transition={{ duration: 0.8 }}
+                className="flex items-center gap-3"
+                whileHover={{ scale: 1.05 }}
+                transition={{ duration: 0.3 }}
               >
-                <div className="absolute inset-0 bg-gradient-to-br from-white/20 to-transparent"></div>
-                <span className="text-white text-2xl relative z-10">†</span>
+                {/* Image Logo */}
+                <div className="relative w-70 h-25">
+                  <Image
+                    src="/Logo2.webp" // Update this path to your actual logo image
+                    alt="Sacred Art Gallery Logo"
+                    fill
+                    className="object-contain"
+                    priority
+                  />
+                </div>
               </motion.div>
-              <div>
-                <span className="text-2xl" style={{ color: "#edc61c" }}>Sacred Art</span>
-                <div className="text-sm text-gray-400">Gallery</div>
-              </div>
             </div>
             <p className="text-gray-400 leading-relaxed">
               Celebrating faith through sacred art and divine inspiration. A spiritual journey through centuries of religious heritage.
@@ -138,7 +142,7 @@ export function Footer() {
         >
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <p className="text-gray-400 text-sm">
-              &copy; {new Date().getFullYear()} Sacred Art Gallery. All rights reserved.
+              &copy; {new Date().getFullYear()} Fr. Samantha's Workshop. All rights reserved.
             </p>
             
             <motion.div
