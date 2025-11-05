@@ -42,13 +42,12 @@ export function Header() {
             transition={{ delay: 0.2 }}
             className="flex items-center gap-3"
           >
-            {/* Replace this entire div with your image logo */}
             <div className="relative">
               <Image
-                src="/Logo2.webp" // Replace with your logo path
+                src="/Logo2.webp" 
                 alt="Sacred Art Gallery"
-                width={500} // Adjust based on your logo size
-                height={100} // Adjust based on your logo size
+                width={500} 
+                height={100}
                 className={`transition-all duration-300 ${
                   scrolled ? "h-15 w-auto" : "h-20 w-auto"
                 }`}
