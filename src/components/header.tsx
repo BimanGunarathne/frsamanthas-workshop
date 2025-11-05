@@ -3,6 +3,7 @@
 import { Menu, X } from "lucide-react";
 import { useState, useEffect } from "react";
 import { motion } from "motion/react";
+import Image from "next/image"; // Import Next.js Image component
 
 export function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -41,23 +42,18 @@ export function Header() {
             transition={{ delay: 0.2 }}
             className="flex items-center gap-3"
           >
-            <div
-              className="w-12 h-12 rounded-full flex items-center justify-center relative overflow-hidden group"
-              style={{ backgroundColor: "#edc61c" }}
-            >
-              <div className="absolute inset-0 bg-gradient-to-br from-white/20 to-transparent"></div>
-              <span className="text-white text-2xl relative z-10 group-hover:scale-110 transition-transform">†</span>
-            </div>
-            <div>
-              <span
-                className={`text-2xl transition-colors ${scrolled ? "text-gray-900" : "text-white"}`}
-                style={{ color: scrolled ? "#edc61c" : "white" }}
-              >
-                Sacred Art
-              </span>
-              <div className="text-xs opacity-70" style={{ color: scrolled ? "#edc61c" : "white" }}>
-                Gallery of Divine Art
-              </div>
+            {/* Replace this entire div with your image logo */}
+            <div className="relative">
+              <Image
+                src="/Logo2.webp" // Replace with your logo path
+                alt="Sacred Art Gallery"
+                width={500} // Adjust based on your logo size
+                height={100} // Adjust based on your logo size
+                className={`transition-all duration-300 ${
+                  scrolled ? "h-15 w-auto" : "h-20 w-auto"
+                }`}
+                priority
+              />
             </div>
           </motion.div>
 
