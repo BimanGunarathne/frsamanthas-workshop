@@ -24,10 +24,10 @@ export function Hero() {
       {/* Animated Background */}
       <motion.div
         className="absolute inset-0 z-0"
-        style={{
-          x: mousePosition.x,
-          y: mousePosition.y,
-        }}
+        // style={{
+        //   x: mousePosition.x,
+        //   y: mousePosition.y,
+        // }}
         transition={{ type: "spring", stiffness: 50, damping: 30 }}
       >
         <ImageWithFallback
@@ -38,39 +38,16 @@ export function Hero() {
         <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/40 to-black/70"></div>
       </motion.div>
 
-      {/* Floating Particles */}
-      {/* <div className="absolute inset-0 z-10 overflow-hidden">
-        {[...Array(20)].map((_, i) => (
-          <motion.div
-            key={i}
-            className="absolute w-1 h-1 rounded-full bg-white/30"
-            initial={{
-              x: Math.random() * window.innerWidth,
-              y: Math.random() * window.innerHeight,
-            }}
-            animate={{
-              y: [null, Math.random() * window.innerHeight],
-              opacity: [0, 1, 0],
-            }}
-            transition={{
-              duration: 3 + Math.random() * 4,
-              repeat: Infinity,
-              delay: Math.random() * 3,
-            }}
-          />
-        ))}
-      </div> */}
-
       <div className="relative z-20 text-center px-4 max-w-5xl">
         {/* Animated Icon */}
         <motion.div
-          initial={{ opacity: 0, scale: 0 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 0.8, ease: "backOut" }}
-          className="mb-8 flex justify-center"
+          // initial={{ opacity: 0, scale: 0 }}
+          // animate={{ opacity: 1, scale: 1 }}
+          // transition={{ duration: 0.8, ease: "backOut" }}
+          // className="mb-8 flex justify-center"
         >
           <div className="relative">
-            <motion.div
+            {/* <motion.div
               className="w-24 h-24 rounded-full flex items-center justify-center relative"
               style={{ backgroundColor: "#edc61c" }}
               animate={{
@@ -84,14 +61,14 @@ export function Hero() {
             >
               <div className="absolute inset-0 rounded-full bg-gradient-to-br from-white/20 to-transparent"></div>
               <span className="text-white text-5xl relative z-10">†</span>
-            </motion.div>
-            <motion.div
+            </motion.div> */}
+            {/* <motion.div
               className="absolute -top-2 -right-2"
               animate={{ rotate: 360 }}
               transition={{ duration: 4, repeat: Infinity, ease: "linear" }}
             >
               <Sparkles className="text-white" size={24} />
-            </motion.div>
+            </motion.div> */}
           </div>
         </motion.div>
 
@@ -102,7 +79,7 @@ export function Hero() {
           transition={{ delay: 0.3, duration: 0.8 }}
         >
           <h1 className="text-6xl md:text-8xl text-white mb-6 bg-gradient-to-r from-white via-white to-white/80 bg-clip-text">
-            Sacred Art Gallery
+            Fr. Samantha's Workshop
           </h1>
         </motion.div>
 
@@ -113,9 +90,9 @@ export function Hero() {
           transition={{ delay: 0.6, duration: 0.8 }}
           className="text-xl md:text-3xl text-white/90 mb-12 max-w-3xl mx-auto"
         >
-          A collection of divine inspiration through{" "}
+          Empowering People Through{" "}
           <span className="relative inline-block">
-            <span style={{ color: "#edc61c" }}>sacred art</span>
+            <span style={{ color: "#edc61c" }}>Creativity</span>
             <motion.span
               className="absolute bottom-0 left-0 h-0.5 bg-gradient-to-r from-transparent via-[#edc61c] to-transparent"
               initial={{ width: 0 }}
