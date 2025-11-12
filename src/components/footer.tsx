@@ -42,7 +42,7 @@ export function Footer() {
                 {/* Image Logo */}
                 <div className="relative w-70 h-25">
                   <Image
-                    src="/Logo2.webp" // Update this path to your actual logo image
+                    src="/assets/Logo2.webp" // Update this path to your actual logo image
                     alt="Sacred Art Gallery Logo"
                     fill
                     className="object-contain"

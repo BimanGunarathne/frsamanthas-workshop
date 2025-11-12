@@ -44,7 +44,7 @@ export function Header() {
           >
             <div className="relative">
               <Image
-                src="/Logo2.webp" 
+                src="/assets/Logo2.webp" 
                 alt="Sacred Art Gallery"
                 width={500} 
                 height={100}
