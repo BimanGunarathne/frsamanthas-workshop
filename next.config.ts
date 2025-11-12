@@ -5,8 +5,8 @@ const nextConfig: NextConfig = {
   reactStrictMode: true,
   reactCompiler: true,
   output: "export",
-  basePath: isProd ? "/frsamanthas-workshop": "",
-  assetPrefix: isProd ? "/public/assets/logo/" : "",
+  basePath: isProd ? "https://github.com/BimanGunarathne/frsamanthas-workshop": "",
+  assetPrefix: isProd ? "/public/" : "",
   images:{
     unoptimized: true,
   },
